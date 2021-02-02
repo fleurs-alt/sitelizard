@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="fr">
+   
+    <head>
+		<meta charset="UTF-8">
+	         <title>Lizard</title>
+			
+			
+       	
+		    <style>
+			
+			<!-- /* CSS pour mon menu */ -->
+			
+		    <!-- /* espacement coté droit et gauche du menu */ -->
+				
+			     * {
+                    padding: 0;
+                    margin: 0;
+                }
+				
+				
+				
+
+
+
+
+	        <!-- /* Css traits et espacements en haut et en bas du menu */ -->
+				
+		         .top {
+                    border-top: 10px solid white;
+                    width: 100%;
+                }
+
+                 .top_2 {
+                    border-top: 10px solid #B3FCDC;
+                    width: 100%;
+                }
+				
+				.top_3 {
+                    border-top: 30px solid white;
+                    width: 100%;
+                }
+				
+
+                .bottom {
+                    border-bottom: 10px solid white;
+                    width: 100%;
+                }
+
+                .bottom_2 {
+                    border-top: 10px solid #B3FCDC;
+                    width: 100%;
+                }
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			   
+		     <!-- /* CSS couleur du menu */ -->
+		        .header {
+                    background-color: #B3FCDC;
+                }
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			<!-- /* CSS boutons du menu */ -->
+				
+                 ul { list-style-type: 
+			         none;
+				     display: flex;
+			         margin: 0px; 
+			         padding: 40px;
+			         overflow: hidden;
+				     font-family:Trebuchet MS, sans-serif;
+                }
+
+
+                 li {
+                      float: left;
+                }
+
+                 li a {
+                     display: block;
+                     color: black;
+                     text-align: center;
+                     padding: 14px 30px;
+                     text-decoration: none;
+				     background-color: white;
+				     margin-right: 20px;
+					 margin-top: 100px; 
+				     border: 1px solid #ECDEB3;
+                }
+
+
+                li a:hover {
+                      background-color:#ECDEB3;
+                }
+				
+				.flex-container {
+                     display: flex;
+                     justify-content: center;
+                     background-color: #B3FCDC;
+                }
+       
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	        <!-- /* CSS div contenaire et ses titres, fait pour la newsletters */ -->
+			
+                 body {font-family: Arial, Helvetica, sans-serif;}
+
+                 form {
+                      border: 3px solid #B3FCDC;
+                     font-family:Trebuchet MS, sans-serif;
+                 }
+
+                .container {
+                    
+				     padding-right : 800px; 
+					 margin-right : 800px; 
+                     background-color: #B3FCDC;
+                 } 
+				 
+                input[type=text], input[type=submit] {
+                     width: 40%;
+                     padding: 12px;
+                     margin: 8px 0;
+                     display: inline-block;
+                     border: 1px solid #ccc;
+                     box-sizing: border-box;
+                }
+
+                input[type=checkbox] {
+                     margin-top: 0px;
+                }
+
+
+                input[type=submit] {
+                     background-color: white;
+                     color: black;
+                     border: black;
+                }
+
+                input[type=submit]:hover {
+                     opacity: 0.8;
+                }
+				
+			
+					
+				h3 {
+				     background-color: #ECDEB3;
+				     margin-right: 550px;
+					 margin-left : 580px;
+				     margin-bottom : 20px;
+				     border: 1px solid #ECDEB3;
+				     margin-top : 100px;
+				     font-family:Trebuchet MS, sans-serif;
+				     color :white; 
+					 font-size : 30px; 
+				     text-shadow: 2px 2px black;
+				}
+				
+				h4 {
+			         padding-right: 20px;
+				     padding-left:150px;
+				     padding-bottom : 0px; 
+				     color: gray; 
+				     font-size : 20px;
+				     padding-top : 20px;
+					 
+				}
+				
+				h5 {			
+				     margin-left :460px; 
+				     padding-bottom : 10px;
+				     color : black;
+				}
+				
+				
+				
+				
+				
+				
+				
+		    <!-- /* CSS  logo réseaux sociaux et contact */ -->
+			
+				
+				 .contact a{
+			         color : gray;
+				     font-size : 40px;
+				     margin-left : 1055px;				
+				}
+			
+	            .social a {
+				     color : white;
+				     font-size : 40px;
+				     margin-left : 65px;
+				}
+				
+				
+			
+			
+			
+			<!-- /* CSS  logo lien vers le début de page */ -->
+				
+				.début {
+				     font-size : 20px;
+				     margin-left : 770px;
+				     padding-bottom : 100px; 
+				}
+				
+		
+			
+				
+		     <!-- /* CSS  situation géographique */ -->
+				
+			     .géographie a{
+				     color :gray; 
+					 font-size : 35px;
+					 margin-left : 1100px;		 
+				}
+					
+
+   
+   
+		    <!-- /* CSS contenu  de la page : titres et paragraphes*/ -->
+			
+				 H1 {
+				    background-color: #ECDEB3;
+				    margin-right: 447px;
+				    margin-left: 580px;
+				    border: 1px solid #ECDEB3;
+				    margin-top : 100px;
+				    margin-bottom: 50px;
+				    font-family:Trebuchet MS, sans-serif;
+				    color :white;
+				    text-shadow: 2px 2px black;
+				}
+						
+				
+				
+				H2 {
+				    font-family:Trebuchet MS, sans-serif;
+				    text-align : right;
+				    padding: 5px 220px 80px;
+				    padding-top :50px;
+				    color : gray; 
+				    border-bottom: 10px solid #B3FCDC;
+				     border-spacing: 20px;
+				}
+				 
+				 
+				 p {
+				     padding: 200px 100px;
+				     margin-left : 400px;
+				     text-align : center;
+				     font-family:Trebuchet MS, sans-serif;
+				     padding-left : 300px;
+				 }
+				
+				
+				
+				
+				
+				
+				
+			 <!-- /* Les étoiles pour les avis, pages nos logements */ -->
+			
+                 .rating {
+                     unicode-bidi: bidi-override;
+                     direction: rtl; 
+					 padding-right : 400px; 
+                }
+				
+				
+                .rating > span:hover:before,
+
+                .rating > span:hover ~ span:before {
+                          content: "\2605";
+                          position: absolute;
+                }
+
+
+
+
+
+
+            	 <!-- /* CSS div avis */ -->
+				 
+				.avis {
+					background : #B3FCDC;
+			     }
+
+
+
+
+
+
+             <!-- /* Bordures autour des titres et des paragraphes*/ -->
+
+                 p.round1 {
+                     border: 5px solid #B3FCDC;
+                     border-radius: 300px;
+                     padding-top : 10px;
+                     padding-bottom : 10px;
+                     padding-left : 10px; 
+                     padding-right : 10px; 
+                     margin-left : 780px; 
+                     margin-right: 200px; 
+                     margin-top : 50px;  
+                }
+
+
+
+                 p.round2 {
+                     border: 5px solid #B3FCDC;
+                     border-radius: 300px;
+                     padding-top : 40px;
+                     padding-bottom : 40px;
+                     padding-left : 10px; 
+                     padding-right : 10px; 
+                     margin-bottom : 0px;
+                     margin-left: 700px; 
+                     margin-right: 100px; 
+                     margin-top : -730px
+					 
+                }
+
+                  p.round3 {
+                     border: 5px solid #B3FCDC;
+                     border-radius: 300px;
+                     padding-top :0px;
+                     padding-bottom : 0px;
+                     padding-left : 0px; 
+                     padding-right : 10px; 
+                     margin-bottom : 0px;
+                     margin-left: 50px; 
+                     margin-right: 800px;
+					 background-color :#B3FCDC; 
+					 
+                }
+
+                 p.round4 {
+				     border: 5px solid #B3FCDC;
+                     border-radius: 300px;
+                     padding-top : 40px;
+                     padding-bottom : 40px;
+                     padding-left : 10px; 
+                     padding-right : 10px; 
+                     margin-bottom : 10px;
+                     margin-left: 700px; 
+                     margin-right: 100px; 
+                     margin-top : -300px
+					 
+                }
+                    
+
+
+
+             <!-- /* Survol des boutons résidences*/ -->
+			 
+                 a:hover {
+                     background-color: #B3FCDC ;
+                }
+	 
+
+             </style>
+			
+ 			
+             <!-- /* JS pour la div avis */ -->
+
+             <meta name="viewport" 
+			     content="width=device-width, initial-scale=1">
+             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+            
+             <!-- /* JS pour le site des icons*/ -->
+
+             <script src="https://kit.fontawesome.com/25d1e7a7ed.js" crossorigin="anonymous"></script>
+				 
+		  
+			
+	</head>
+   
+    <body>
+		  
+        <header>
+	
+	     <!-- Traits en haut du menu -->
+		  
+		     <div class="top_3">
+             </div>
+		
+             <div class="top_2">   
+             </div>
+		
+             <div class="top"> 
+             </div>
+			 
+		
+		<!-- Mon menu -->
+		     
+		    <div class="flex-container">
+                <ul>
+			
+		<!-- Image du logo de la marque-->
+					 <li><img src="https://i.ibb.co/3mfY1g2/lizard-jpg.jpg" alt= "logo de la marque lizard : lézard avec des lunettes de soleil" style = "height : 180px; margin-right:150px; margin-top : 0px; margin-left:50px;"></li>
+					 
+					 			 
+	    <!-- Références / liens entre mes autres pages-->
+		             <li><a class="active" href="index1.html">Page d'accueil</a></li>
+                     <li><a href="logement.html">Nos logements</a></li>
+                     <li><a href="service.html">Nos Services</a></li>
+                     <li><a href="quisommesnous.html">Qui sommes nous ?</a></li>
+				
+                </ul>
+		    </div>
+         
+			
+		<!-- Traits en bas du menu -->
+        
+             <div class="bottom"></div>
+             <div class="bottom_2"></div>
+		
+        </header>
+		  
+   
+	    <main id = "main-content">
+                 <h1 id = "1"> Nos logements </h1>
+
+		<!-- Résidence 1 -->
+		
+			         <p class="round1"><a href="residence.html">Résidence Flamboyant</a></p> 
+			  
+			         <p class="round3"><img src = "https://live.staticflickr.com/426/19752886560_f780dde1a7_b.jpg" alt= "batiment de la résidence Flamboyant" style="width:400px; height:300px; margin-left:200px;border-radius: 300px;"><p>
+			
+			
+			         <p class="round2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                         incididunt ut labore et dolore magna aliqua.Nullam massa sem, accumsan lobortis tortor quis, sollicitudin blandit nunc. Morbi ut dui eget lacus ornare sagittis mollis sit amet erat. Sed tellus eros, vehicula fermentum interdum vel, consequat vel arcu. Suspendisse facilisis eu dui id eleifend. 
+			          	 Sed consequat metus ipsum, sit amet pretium orci convallis et. Donec et ornare magna, dapibus posuere nunc. 
+			           	 Vestibulum eleifend pellentesque tellus nec dignissim. Quisque elementum suscipit ipsum et pretium.
+			          	 Nullam ullamcorper commodo odio, id elementum felis accumsan eget. </p>
+				
+				
+			<div class ="géographie">
+				
+				         <a href = "https://goo.gl/maps/7uJzg9kT2TcJopG27"><i class="fas fa-map-marker-alt"></i></a>
+				
+				<h2> Guadeloupe, Dehais </h2>
+		    </div>
+				
+				
+				
+				
+				
+				
+		<!-- Résidence 2 -->
+					
+				    <p class="round1"><a href="residence.html">Résidence Ulysse</a></p> 
+				
+				    <p class="round3"><img src = "https://live.staticflickr.com/426/19752886560_f780dde1a7_b.jpg" alt= "batiment de la résidence Ulysse" style="width:400px; height:300px; margin-left:200px; border-radius: 300px;"><p>
+				
+				
+				     <p class="round2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.Nullam massa sem, accumsan lobortis tortor quis, sollicitudin blandit nunc. Morbi ut dui eget lacus ornare sagittis mollis sit amet erat. Sed tellus eros, vehicula fermentum interdum vel, consequat vel arcu. Suspendisse facilisis eu dui id eleifend. 
+				        Sed consequat metus ipsum, sit amet pretium orci convallis et. Donec et ornare magna, dapibus posuere nunc. 
+				        Vestibulum eleifend pellentesque tellus nec dignissim. Quisque elementum suscipit ipsum et pretium.
+				        Nullam ullamcorper commodo odio, id elementum felis accumsan eget. </p>
+				
+				
+			<div class ="géographie">
+				 
+				         <a href = "https://goo.gl/maps/waKTMyrwJxAapv3V9"><i class="fas fa-map-marker-alt"></i></a>
+				<h2> Guadeloupe, Baie-Mahaut </h2>
+		    </div>
+		
+		
+		
+		
+		
+		<!-- Résidence 3 -->
+		
+		            <p class="round1"><a href="residence.html">Résidence les lilas</a></p> 
+
+				
+				    <p class="round3"><img src = "https://live.staticflickr.com/426/19752886560_f780dde1a7_b.jpg" alt= "Batiment de la résidence les lilas" style="width:400px; height:300px; margin-left:200px; border-radius: 300px;"></p>
+				
+				
+				    <p class="round4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                         incididunt ut labore et dolore magna aliqua.Nullam massa sem, accumsan lobortis tortor quis, sollicitudin blandit nunc. Morbi ut dui eget lacus ornare sagittis mollis sit amet erat. Sed tellus eros, vehicula fermentum interdum vel, consequat vel arcu. Suspendisse facilisis eu dui id eleifend. 
+				         Sed consequat metus ipsum, sit amet pretium orci convallis et. Donec et ornare magna, dapibus posuere nunc. 
+				         Vestibulum eleifend pellentesque tellus nec dignissim. Quisque elementum suscipit ipsum et pretium.
+				         Nullam ullamcorper commodo odio, id elementum felis accumsan eget.</p>
+				
+				
+			<div class ="géographie">
+			             <a href = "https://goo.gl/maps/EgXMJDRrsx5UGf7G8"><i class="fas fa-map-marker-alt"></i></a>
+			    <h2> Martinique, Petit-Bourg</h2>
+			</div>
+				
+				
+				
+				
+				
+				
+		 <!-- Les étoiles pour les avis, pages nos logements -->
+		 
+            <div class ="avis"> 
+
+                 <h3> Vos avis </h3>
+			
+             <div class="container">
+                 <form action="/action_page.php">
+             <div class="form-group"></div>
+	         <div class="rating">
+	                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+	             <label for="satisfaction">Satisfaction</label>
+			        
+            </div>
+                 <label for="comment">Commentaire:</label>
+                         <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+            
+                 <button type="submit" class="btn btn-primary">Envoyer</button>
+                 </form>
+		    
+           </div>
+		
+
+					
+					 
+					 
+		
+			
+		
+		<!-- Etiquette nous contacter -->
+
+                 <h3> Nous contacter </h3>
+
+
+
+        <!-- Mon footer -->
+					  
+		         <form action="/action_page.php">             
+			<div class="container" style="background-color:#B3FCDC">
+			
+			     <h4>Newsletters</h4>
+				   
+					 <input type="text" placeholder="Adresse email" name="mail" required>
+					  
+
+	    <!-- checkbox mensuel/ hebdomadaire -->
+						 
+				<label>
+                    <input type="checkbox" checked="checked" name="subscribe"> mensuel
+					
+				</label>
+				 
+				<label>
+	                <input type="checkbox" checked="checked" name="subscribe"> hebdomadaire
+				</label>
+               
+				     <input type="submit" value="Je m'abonne">
+	
+				  
+        <!-- Liens vers (mail / téléphone)  -->
+					 
+		    <div class ="contact">
+		
+		            <a href="lizard@gmail.com"><i class="fas fa-envelope-square"></i></a>		
+					<a href="Tel:067023.22.22"><i class="fas fa-phone-square-alt"></i> </a>
+			</div>
+						
+		
+		<!-- Liens vers (réseaux sociaux)  -->
+		
+		    <div class ="social">
+				 
+				    <a href = "https://www.facebook.com/gaelle.casi.5/"><i class="fab fa-facebook"></i></a>
+				    <a href = "https://www.instagram.com/runtheworld.w/"><i class="fab fa-instagram"></i></a>
+			</div>
+				 
+				
+		
+		<!-- boutons affichage page "mentionlegale" -->
+						    
+			     <h5><a href="mentionlegale.html"> mentions légales</a></h5>
+				 
+            <div class ="début">
+                    <a href ="#1"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
+			                
+		    </div>
+             
+			</div>  
+		         </form>
+		    </div>		
+         
+	    </main>
+    </body>
+</html>

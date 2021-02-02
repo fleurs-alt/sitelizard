@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+     
+	<head>
+		<meta charset="UTF-8">
+	         <title>Lizard</title>
+	
+       	
+		    <style>
+			
+			<!-- /* CSS pour mon menu */ -->
+			
+		    <!-- /* espacement coté droit et gauche du menu */ -->
+				
+			     * {
+                    padding: 0;
+                    margin: 0;
+                }
+
+	        <!-- /* CSS traits et espacements en haut et en bas du menu */ -->
+				
+		         .top {
+                    border-top: 10px solid white;
+                    width: 100%;
+                }
+
+                 .top_2 {
+                    border-top: 10px solid #B3FCDC;
+                    width: 100%;
+                }
+				
+				.top_3 {
+                    border-top: 30px solid white;
+                    width: 100%;
+                }
+				
+
+                .bottom {
+                    border-bottom: 10px solid white;
+                    width: 100%;
+                }
+
+                .bottom_2 {
+                    border-top: 10px solid #B3FCDC;
+                    width: 100%;
+                }
+				
+			   
+		     <!-- /* CSS couleur du menu */ -->
+		        .header {
+                    background-color: #B3FCDC;
+                }
+				
+			<!-- /* CSS boutons du menu */ -->
+				
+                 ul { list-style-type: 
+			         none;
+				     display: flex;
+			         margin: 0px; 
+			         padding: 40px;
+			         overflow: hidden;
+				     font-family:Trebuchet MS, sans-serif;
+                }
+
+
+                 li {
+                     float: left;
+                }
+
+
+                 li a {
+                     display: block;
+                     color: black;
+                     text-align: center;
+                     padding: 14px 30px;
+					 margin-top : 100px; 
+                     text-decoration: none;
+				     background-color: white;
+				     margin-right: 20px;
+				     border: 1px solid #ECDEB3;
+                }
+
+
+                 li a:hover {
+                     background-color:#ECDEB3;
+                }
+				
+				.flex-container {
+                     display: flex;
+                     justify-content: center;
+                     background-color: #B3FCDC;
+                }
+       
+	   
+	 
+				 
+				 
+				 
+		    <!-- /* CSS div contenu (paragraphes et titres) */ -->
+				
+                 .contenu {
+                     text-align: center;
+				     margin-top: 200px;
+				     margin-bottom : 60px; 
+				     margin-left : 200px;
+				     margin-right : 200px;
+				     font-family:Trebuchet MS, Times New Roman, sans-serif;
+                 }
+				 
+				 
+				 
+				 p{
+				     padding: 20px 50px 10px;
+				     font-family:Trebuchet MS, sans-serif;
+				 }
+				
+				
+				 H1 {
+				     margin-top: 130px;
+				     margin-left : 450px;
+				     margin-bottom : -200PX;
+				     font-family:Trebuchet MS, sans-serif;
+				     font-size : 50px;
+				     color :#B3FCDC;
+				     text-shadow: 2px 2px black;
+				}
+				
+	
+				
+		   <!-- /* CSS div contenaire et ses titres, fait pour la newsletters */ -->
+			
+                 body {font-family: Arial, Helvetica, sans-serif;}
+
+                 form {
+                      border: 3px solid #B3FCDC;
+                 font-family:Trebuchet MS, sans-serif;
+                  }
+
+                .container {
+                     padding-left : 500px;
+				     padding-right : 200px; 
+                     background-color: #B3FCDC;
+                 } 
+				 
+                input[type=text], input[type=submit] {
+                     width: 40%;
+                     padding: 12px;
+                     margin: 8px 0;
+                     display: inline-block;
+                     border: 1px solid #ccc;
+                     box-sizing: border-box;
+                }
+
+                input[type=checkbox] {
+                     margin-top: 0px;
+                }
+
+
+                input[type=submit] {
+                     background-color: white;
+                     color: black;
+                     border: black;
+                }
+
+                input[type=submit]:hover {
+                     opacity: 0.8;
+                }
+				
+				H2 {
+				     background-color: #ECDEB3;
+				     margin-right: 1100px;
+				     margin-bottom : 20px;
+				     padding-left : 20px;
+				     padding-right : 20px;
+				     border: 1px solid #ECDEB3;
+				     margin-top : 100px;
+				     font-family:Trebuchet MS, sans-serif;
+				     color :white;
+				     text-shadow: 2px 2px black;
+				}
+				
+				H3 {
+			         padding-right: 20px;
+				     padding-left:80px;
+				     padding-bottom : 0px; 
+				     color: gray; 
+				     font-size : 20px;
+				     padding-top : 20px;
+				}
+				
+				h4 {			
+				     margin-left :460px; 
+				     padding-bottom : 10px;
+				     color : black;
+				}
+				
+				
+		
+				
+				
+		   <!-- /* CSS  logo réseaux sociaux et contact */ -->
+			
+				
+				 .contact a{
+			         color : gray;
+				     font-size : 40px;
+				     margin-left : 755px;				
+				}
+			
+	            .social a {
+				     color : white;
+				     font-size : 40px;
+				     margin-left : 65px;
+				}
+				
+		    		
+		   <!-- /* CSS  logo début de page */ -->
+				
+				.début {
+				     font-size : 20px;
+				     margin-left : 770px;
+				     padding-bottom : 100px; 
+				}
+				
+		
+
+             <!-- /* CSS animation image 2 */ -->
+                 .dragon {
+                      width: 100px;
+                      height: 100px;
+                      position: relative;
+                      animation: mymove 5s;
+                      margin-bottom : 25px;
+                 }
+
+                @keyframes mymove {
+                     from {right: 0px;}
+                     to {right: 100px;}
+                 }
+				
+			 
+			 <!-- /* CSS Javascript (discute avec nous) */ -->
+				   
+				 #mainSelection{
+				     margin-left : 700px; 
+				     margin-top : 220px;
+                     margin-bottom : -230px; 			
+				 }
+				   
+		
+            </style>
+			
+			<script src="https://kit.fontawesome.com/25d1e7a7ed.js" crossorigin="anonymous"></script>
+	</head>
+   
+    <body>
+		  
+         <header>
+	
+	    <!-- Traits en haut du menu -->
+		  
+		     <div class="top_3">
+             </div>
+		
+             <div class="top_2">   
+             </div>
+		
+             <div class="top"> 
+             </div>
+			 
+		
+		
+		<!-- Mon menu -->
+		     
+		    <div class="flex-container">
+                <ul>
+			
+ 
+		<!-- Image du logo de la marque-->
+		             <li><img src="https://i.ibb.co/3mfY1g2/lizard-jpg.jpg" alt= "logo de la marque lizard : lézard avec des lunettes de soleil" style = "height : 180px; margin-right:150px; margin-top : 0px; margin-left:50px;"></li>
+					 
+								 
+								 
+	     <!-- Références / liens entre mes autres pages-->
+		             <li><a class="active" href="index1.html">Page d'accueil</a></li>
+                     <li><a href="logement.html">Nos logements</a></li>
+                     <li><a href="service.html">Nos Services</a></li>
+                     <li><a href="quisommesnous.html">Qui sommes nous ?</a></li>
+				
+                 </ul>
+		    </div>
+         
+			
+		<!-- Traits en bas du menu -->
+        
+             <div class="bottom"></div>
+             <div class="bottom_2"></div>
+		
+         </header>
+	     <main id = "main-content">
+	   
+	
+	   
+	   
+	             <h1 id ="1" > Salut Champion ! </h1>
+	
+		
+		             <section id="mainSelection">
+
+				         <button type="button" id="myBtn" onclick="myFunction()"> </button>
+				          <button onclick = "prompt('Comment vas-tu ?')">Discute avec nous  </button>
+		 
+				     </section>
+
+				   
+		    <div class="contenu">
+			
+			
+	    <!--Deuxième image animée-->
+			
+			<div class = dragon>
+			     <img src = "https://thumbs.dreamstime.com/b/krokodyl-21475375.jpg" alt= "lézard avec des lunettes qui salue" style="width:200px; height:200px; margin-right:50px; margin-left:750px; margin-top :-100px; margin-bottom : 100px;">
+			</div>
+
+
+
+        <!-- Paragraphe-->
+		 
+				     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+				     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				     Sed consequat metus ipsum, sit amet pretium orci convallis et. Donec et ornare magna, dapibus posuere nunc. 
+				     Vestibulum eleifend pellentesque tellus nec dignissim. Quisque elementum suscipit ipsum et pretium.
+				     Nullam ullamcorper commodo odio, id elementum felis accumsan eget</p>
+				
+				
+	    <!-- Troisième image -->
+	             <img src = "https://news.wef.org/wp-content/gallery/wefcom/discussion-lores.jpg" alt= "lézard avec un crayon qui dessine" style="width:200px; height:200px; margin-right:200px; margin-left:250px; margin-top:50px; margin-bottom : 50px;">
+					 
+					 
+		 <!-- Paragraphe-->
+		   
+				     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                     incididunt ut labore et dolore magna aliqua.Nullam massa sem, accumsan lobortis tortor quis, sollicitudin blandit nunc. Morbi ut dui eget lacus ornare sagittis mollis sit amet erat. Sed tellus eros, vehicula fermentum interdum vel, consequat vel arcu. Suspendisse facilisis eu dui id eleifend. 
+				     Sed consequat metus ipsum, sit amet pretium orci convallis et. Donec et ornare magna, dapibus posuere nunc. 
+				     Vestibulum eleifend pellentesque tellus nec dignissim. Quisque elementum suscipit ipsum et pretium.
+				     Nullam ullamcorper commodo odio, id elementum felis accumsan eget. </p>
+	     	 </div>
+		
+					
+		
+		<!-- Etiquette nous contacter -->
+
+                 <h2> Nous contacter </h2>
+
+
+
+        <!-- Mon footer -->
+					  
+		         <form action="/action_page.php">
+                       
+			<div class="container" style="background-color:#B3FCDC">
+			
+			     <h3>Newsletters</h3>
+				   
+					 <input type="text" placeholder="Adresse email" name="mail" required>
+					  
+
+	    <!-- checkbox mensuel/ hebdomadaire -->
+						 
+				<label>
+                    <input type="checkbox" checked="checked" name="subscribe"> mensuel
+					
+				</label>
+				 
+				<label>
+	                 <input type="checkbox" checked="checked" name="subscribe"> hebdomadaire
+				 </label>
+     
+				     <input type="submit" value="Je m'abonne">
+	
+				  
+        <!-- Liens vers (mail / téléphone)  -->
+					 
+		     <div class ="contact">
+		
+		                <a href="lizard@gmail.com"><i class="fas fa-envelope-square"></i></a>		
+					    <a href="Tel:067023.22.22"><i class="fas fa-phone-square-alt"></i></a>
+			</div>
+						
+		
+		<!-- Liens vers (réseaux sociaux)  -->
+		
+		    <div class ="social">
+				 
+				         <a href = "https://www.facebook.com/gaelle.casi.5/"><i class="fab fa-facebook"></i></a>
+						 <a href = "https://www.instagram.com/runtheworld.w/"><i class="fab fa-instagram"></i></a>
+			</div>
+				 
+				
+		
+		<!-- boutons affichage page "mentionlegale" -->
+						    
+			     <h4><a href="mentionlegale.html"> mentions légales</a></h4>
+				 
+				 <!-- Lien vers le début de page" -->
+				
+			<div class ="début">
+				          <a href ="#1"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>            
+			</div>
+		        
+             
+			</div>  
+		         </form>
+		</main>			 
+     </body>
+</html>
